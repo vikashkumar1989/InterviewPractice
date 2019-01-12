@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
+  <listeners>
+    <listener class-name="test.CustomListener"/>
+  </listeners>
+  <test name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="test.ActionsClass">
+        <methods>
+          <include name="SelectDropDOwn"/>
+          <include name="IntializeBrowser"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- test.ActionsClass -->
+      <class name="test.Dropdown">
+        <methods>
+          <include name="SelectDropDOwn"/>
+          <include name="IntializeBrowser"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- test.Dropdown -->
+      <class name="test.IsDisplayedEnabledSelected">
+        <methods>
+          <include name="IntializeBrowser"/>
+          <include name="Method"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- test.IsDisplayedEnabledSelected -->
+      <class name="test.ExplicitWait">
+        <methods>
+          <include name="IntializeBrowser"/>
+          <include name="explicitwait"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- test.ExplicitWait -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
